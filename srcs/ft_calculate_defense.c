@@ -15,8 +15,8 @@
 
 int 	ft_calculate_defense(char **board, int cols, int rows, scores_database *scores) // checks if such a move in col is possible and if so inserts . current player is for choosing which symbol to put
 {
-	int		ai_col; // column where ai drops from 1 to cols
-	int		*ai_loc; // array containing row and column of the drop
+	int		ai_col;
+	int		*ai_loc;
 	int		needs_defense;
 	char	**board_sandbox;
 

@@ -12,9 +12,9 @@
 
 #include "libft.h"
 #include "puissance.h"
-/* add so that it goes one way and then back also !!!*/
+
 int ft_check_diagonal(char **brd, int *loc, int cols, int rows, char player, scores_database *scores)
-{	
+{
 	scores->d.traverse = 0;
 	scores->d.count_right_up = 0;
 	scores->d.count_right_down = 0;
@@ -43,11 +43,7 @@ int ft_check_diagonal(char **brd, int *loc, int cols, int rows, char player, sco
 		scores->d.count_left_down++;
 		scores->d.traverse++;
 	}
-	/*printf("--------------\n");
-	printf("count_right_up %d\n", scores->d.count_right_up);
-	printf("count_right_down %d\n", scores->d.count_right_down);
-	printf("count_left_up %d\n", scores->d.count_left_up);
-	printf("count_left_down %d\n", scores->d.count_left_down);*/
+	
 	if (scores->d.count_right_up == 4 || scores->d.count_right_down == 4 || scores->d.count_left_up == 4 || scores->d.count_left_down == 4)
 		return (1);
 	return (0);

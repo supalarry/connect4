@@ -12,7 +12,7 @@
 
 #ifndef PUISSANCE_H
 # define PUISSANCE_H
-# include <stdio.h> // REMOVE THIS HIV
+# include <stdio.h>
 
 typedef struct
 {

@@ -14,7 +14,7 @@
 #include "puissance.h"
 
 int ft_check_horizontal(char **brd, int *loc, int cols, int rows, char player, scores_database *scores)
-{	
+{
 	scores->h.iterate_right = loc[1];
 	scores->h.iterate_left = loc[1];
 	scores->h.count_right = 0;
@@ -41,10 +41,7 @@ int ft_check_horizontal(char **brd, int *loc, int cols, int rows, char player, s
 		scores->h.count_total++;
 		scores->h.iterate_right--;
 	}
-	/*printf("--------------\n");
-	printf("count_right %d\n", count_right);
-	printf("count_left %d\n", count_left);
-	printf("count_total %d\n", count_total);*/
+
 	if (scores->h.count_right == 4 || scores->h.count_left == 4 || scores->h.count_total >= 4)
 		return (1);
 	return (0);

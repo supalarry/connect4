@@ -14,7 +14,7 @@
 #include "puissance.h"
 
 int ft_check_vertical(char **brd, int *loc, int cols, int rows, char player, scores_database *scores)
-{	
+{
 	scores->v.iterate_down = loc[0];
 	scores->v.count_down = 0;
 	while (scores->v.iterate_down <= rows && brd[scores->v.iterate_down][loc[1]] == player && scores->v.count_down != 4)
@@ -22,8 +22,7 @@ int ft_check_vertical(char **brd, int *loc, int cols, int rows, char player, sco
 		scores->v.count_down++;
 		scores->v.iterate_down++;
 	}
-	/*printf("--------------\n");
-	printf("count down %d\n", count_down);*/
+
 	if (scores->v.count_down == 4)
 		return (1);
 	return (0);

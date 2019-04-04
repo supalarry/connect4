@@ -21,10 +21,10 @@ char **ft_copy_board(char **board, int cols, int rows)
 
 	i = 0;
 	j = 0;
-	board_copy = (char **)malloc(sizeof(char *) * rows); // allocate space so that each row has its own address
+	board_copy = (char **)malloc(sizeof(char *) * rows);
 	while (i < rows)
 	{
-		board_copy[i] = (char *)malloc(sizeof(char) * cols); // make each row to be able to hold 'cols' columns
+		board_copy[i] = (char *)malloc(sizeof(char) * cols);
 		i++;
 	}
 	i = 0;

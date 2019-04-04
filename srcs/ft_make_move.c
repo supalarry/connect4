@@ -20,13 +20,13 @@ int		*ft_make_move(char **board, int cols, int rows, int col, int player_id) // 
 
 	i = 0;
 	loc = (int *)malloc(sizeof(int) * 2);
-	if (board[rows - 1][col - 1] == '.') //if player wants to insert in a col where bottom is empty
+	if (board[rows - 1][col - 1] == '.')
 	{
 		board[rows - 1][col - 1] = (player_id == 0  ? 'O' : 'X');
 		loc[0] = rows - 1;
 		loc[1] = col - 1;
 	}
-	else // we have to loop through that whole column and find last item in column
+	else
 	{
 		while (board[i][col - 1] != 'X' && board[i][col - 1] != 'O')
 			i++;
