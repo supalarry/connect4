@@ -12,7 +12,7 @@
 
 #include "libft.h"
 #include "puissance.h"
-// TODO: Remove this stdio before push
+
 /* argv[1] = rows argv[2] = cols */
 int main(int argc, char **argv)
 {
