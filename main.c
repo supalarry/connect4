@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 			i++;
 		}
 		ft_fill(board, cols, rows, '.'); // fill the empty board
-		ft_putstr("Hi There, You'll be playing against skynet today.'\n");
+		ft_putstr("Hi There, You'll be playing against Perry AI today.'\n");
 		ft_putstr("Goodluck, You'll need it.'\n");
 		ft_print(board, cols, rows); // print empty board game
 		ft_start_game(board, cols, rows); // launch the game
