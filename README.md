@@ -1,5 +1,5 @@
 # connect4
-Goal was to create an algorithm that can attack and defend in game of connect four. Thus, you have a chance to play connect four with an algorithm having an IQ of 300. This project was done in two days for fun. 😊
+Goal was to create an algorithm that can attack and defend in game of connect four. Thus, you have a chance to play connect four with an algorithm having an IQ of 300. This project was done in two days for fun. 😊 
 
 ## Project folder structure
 ```
